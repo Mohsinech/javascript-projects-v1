@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "neue montreal", sans-serif;
+}
+
+body {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+}
+
+.toggle {
+  position: fixed;
+  right: 0;
+  margin: 1rem;
+}
+
+svg {
+  fill: #e94949;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+svg:hover {
+  fill: black;
+}
+
+.navbar {
+  width: 400px;
+  height: 100vh;
+  background-color: #f1f1f1;
+  padding: 1rem;
+  transform: translateX(-100%);
+}
+
+.navbar .exit {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.list .nav_logo {
+  font-size: 2rem;
+  color: #e94949;
+  font-weight: 500;
+}
+
+.list li a {
+  color: gray;
+  font-size: 1.5rem;
+}
+
+/* EVENT */
+.show {
+  transform: translateX(0);
+  transition: 0.5s ease;
+}

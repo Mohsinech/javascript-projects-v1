@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "General sans", sans-serif;
+}
+
+body {
+  background-color: aliceblue;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 280px;
+  background-color: rgb(240, 248, 255);
+  padding: 1rem;
+  border-radius: 2rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px rgba(255, 255, 255, 0.8);
+  overflow: hidden;
+}
+
+img {
+  width: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 0.8rem;
+}
+
+.active {
+  transition: 1s all;
+  display: flex;
+  justify-content: start;
+  width: 60px;
+  border: radius 50%;
+}
+
+.active input {
+  width: 0;
+}
+
+.active .mic {
+  width: 0;
+}

@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f1f1f1;
+  height: 100vh;
+  font-family: "Neue montreal", sans-serif;
+  display: grid;
+  place-content: center;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}

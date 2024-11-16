@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "neue montreal", sans-serif;
+}
+.card {
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+input {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+button {
+  background-color: #000;
+  border: none;
+  color: white;
+  width: 100%;
+  border-radius: 0.5rem;
+  font-family: "neue montreal", sans-serif;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+.success {
+  color: seagreen;
+  font-size: 0.8rem;
+  display: none;
+}
+.faild {
+  color: red;
+  font-size: 0.8rem;
+  display: none;
+}
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.prices h1 {
+  font-weight: 400;
+}
+.prices h2 {
+  color: gray;
+  font-weight: 400;
+}
+.line {
+  text-decoration: line-through;
+}

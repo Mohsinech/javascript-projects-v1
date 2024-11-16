@@ -1,0 +1,27 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "hero", sans-serif;
+}
+.greet {
+  padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: start;
+}
+.title {
+  font-size: 3rem;
+}
+button {
+  color: #f1f1f1;
+  background-color: red;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}

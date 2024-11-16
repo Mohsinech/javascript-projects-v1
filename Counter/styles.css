@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Neue montreal", sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+}
+
+.counter {
+  display: grid;
+  place-content: center;
+  height: 15vh;
+  width: 50%;
+  background-color: rgb(1, 187, 109);
+  border-radius: .5rem;
+  color: #f1f1f1;
+  font-size: 3rem;
+}
+
+button {
+  border: none;
+  font-size: 2rem;
+  color:rgb(1, 187, 109);
+  cursor: pointer;
+}
+
+h1 {
+  color: rgb(1, 187, 109);
+  text-transform: uppercase;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

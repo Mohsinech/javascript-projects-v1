@@ -1,0 +1,44 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hero", sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: #f1f1f1;
+}
+button {
+  background-color: rgb(219, 102, 193);
+  color: #f1f1f1;
+  margin: 4rem;
+  border: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.modal {
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 50vh;
+  padding: 0 4rem;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+  column-gap: 2rem;
+  display: none;
+}
+.modal-title {
+  font-size: 4rem;
+  color: #f1f1f1;
+}
+p {
+  font-size: 1.5rem;
+  color: #f1f1f1;
+  margin-top: 2rem;
+}

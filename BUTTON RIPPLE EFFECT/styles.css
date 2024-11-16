@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  height: 100vh;
+  background-color: #f1f1f1;
+  font-family: "Neue Montreal", sans-serif;
+  display: grid;
+  place-content: center;
+}
+
+.btn {
+  background-color: tomato;
+  color: #f1f1f1;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 99, 71, 0.5);
+  transition: 0.15s;
+  position: relative;
+  overflow: hidden;
+}
+.btn:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.btn::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  background-color: black;
+  left: var(--xPos);
+  top: var(--yPos);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: width 0.5s, height 0.5s;
+}
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+.btn:hover::before {
+  width: 300px;
+  height: 300px;
+}
